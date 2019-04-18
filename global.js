@@ -6,7 +6,7 @@ const counter_button = document.getElementById("counter_button");
 const even_or_odd_button = document.getElementById("even_or_odd_button");
 
 // Color changer
-gray_button.onclick = function() {
+gray_button.onclick = function () {
     color_box.className = "gray";
 };
 
@@ -14,20 +14,31 @@ blue_button.onclick = function () {
     color_box.className = "blue";
 };
 
+pink_button.onclick = function () {
+    color_box.className = "pink";
+};
+
 // Add a third button (and the associated event handler) to support an additional color: pink
 // Your code here
 
 // Counter
-let count = 0;  
+let count = 0;
 
-counter_button.onclick = function() {   
+counter_button.onclick = function () {
     // Complete this function so that it increments the variable named count
-    document.querySelector('#countspan').innerHTML // =  your code here 
+    document.querySelector('#countspan').innerHTML = count++
+    console.log(count)
 }
 
 // Even or odd?
-even_or_odd_button.onclick = function() {
+even_or_odd_button.onclick = function () {
     //Fill in this function so that it shows an alert dialog stating whether the count (from part 2, above) is even or odd.
     // Hint: is it divisible by 2?
     //Your code here
+
+    if (count % 2 == 0) {
+        alert('That number is quite odd!');
+    } else {
+        alert('as they say, "Even Steven!"')
+    }
 }
