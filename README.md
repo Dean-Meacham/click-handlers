@@ -6,7 +6,7 @@ If you open the `global.js` file in your web browser, you will see three section
 
 In the browser, clicking on the "blue" and "gray" buttons in section 1 will change the color of the square. The other buttons on the page don't do anything ...yet.
 
-Open `global.js` in your code editor. There are three separate sections of JavaScrip with tasks. Complete all three.
+Complete the tasks inside `global.js`
 
 ### Math Hint ###
 
